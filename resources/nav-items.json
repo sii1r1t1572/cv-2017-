@@ -1,0 +1,13 @@
+[{
+	"id": "about",
+	"img": "images/about.svg"
+}, {
+	"id": "education",
+	"img": "images/education.svg"
+}, {
+	"id": "skills",
+	"img": "images/skills.svg"
+}, {
+	"id": "contacts",
+	"img": "images/contacts.svg"
+}]
