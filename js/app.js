@@ -1,7 +1,7 @@
 (function(){
   
   angular
-    .module('mrTsybranCV', ['ngRoute'])
+    .module('mrTsybranCV', ['ngRoute', 'ngMaterial'])
     .config(function($routeProvider){
       $routeProvider
         .when('/', {
