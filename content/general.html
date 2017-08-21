@@ -1,3 +1,6 @@
-<div>
-	
+<div class='profile_card'>
+	 <md-input-container ng-repeat='input in inputs' ng-class='input.class'>
+        <label>{{ input.label }}</label>
+        <input value='{{ input.text }}' disabled>
+      </md-input-container>	
 </div>

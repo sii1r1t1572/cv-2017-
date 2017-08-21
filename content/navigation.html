@@ -1,6 +1,5 @@
-<md-button id='{{item.id}}' class='menu-item md-fab md-primary' ng-repeat='item in items'>
-	<a href='index.html#/{{item.id}}' class='nav-icon' ng-click='setActive(item.id)'>
-		<i class="material-icons">&#xE84E;</i>
-  		<!-- <img class='svg' ng-src='{{item.img}}' /> -->
-	</a>
-</md-button>
+<a href='index.html#/{{item.id}}' class='nav-icon' ng-repeat='item in items'>
+	<md-button id='{{item.id}}' class='menu-item md-fab'>
+		<md-icon aria-label='{{item.name}}'>{{item.name}}</md-icon>
+	</md-button>
+</a>

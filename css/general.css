@@ -1,0 +1,12 @@
+general-info{
+	width: 250px;
+	margin: 0 20px;
+	opacity: 1;
+	transition: opacity .3s ease-in-out;
+}
+general-info.ng-hide{
+	opacity: 0;
+}
+.md-input-container .md-errors-spacer{
+	display: none;
+}
