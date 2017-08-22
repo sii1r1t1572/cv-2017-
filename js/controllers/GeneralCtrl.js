@@ -9,26 +9,23 @@
 					text: $rootScope.creator,
 					class: 'md-full'
 				}, {
-					label: 'Country',
+					label: 'Location',
 					text: 'Ukraine',
 					class: 'md-half'
 				}, {
-					label: 'City',
 					text: 'Lviv',
 					class: 'md-half'
 				},
 				{
-					label: 'DD/',
+					label: 'Birthdate',
 					text: '02',
-					class: 'md-half'
+					class: 'md-third'
 				},
 				{
-					label: 'MM/',
 					text: '06',
 					class: 'md-third'
 				},
 				{
-					label: 'YYYY',
 					text: '1994',
 					class: 'md-third'
 				},

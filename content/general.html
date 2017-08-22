@@ -1,6 +1,16 @@
 <div class='profile_card'>
-	 <md-input-container ng-repeat='input in inputs' ng-class='input.class'>
-        <label>{{ input.label }}</label>
-        <input value='{{ input.text }}' disabled>
-      </md-input-container>	
+	<h3 class='md-title'>
+		General Info
+	</h3>
+	<md-input-container ng-repeat='input in inputs' ng-class='input.class'>
+		<label>{{ input.label }}</label>
+		<input value='{{ input.text }}' disabled>
+	</md-input-container>	
 </div>
+<a class='git' href='https://github.com/sii1r1t1572/cv-2017-' target='_blank'>
+	<md-button id='git'class='md-fab'>
+		<md-tooltip md-delay='500' md-direction='left' class='git_tooltip'>
+			View source code on GitHub!
+		</md-tooltip>
+	<md-button>
+</a>
