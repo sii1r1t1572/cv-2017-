@@ -1,0 +1,47 @@
+h2{
+	color: rgba(255,255,255,.87);
+	text-align: right;
+	width: 100%;
+	background: rgb(0,0,0,.54);
+	padding: 15px;
+	margin: 0;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
+				0 3px 6px rgba(0,0,0,0.23);
+	box-sizing: border-box;
+	cursor: url('../images/cursor_white.png'), auto;
+}
+h3{
+	margin: 0;
+	margin-top: 25px;
+	width: 100%;
+}
+h3:first-of-type .md-button,
+h3:first-of-type .md-button:hover{
+	background: rgba(0,0,0,.54);
+	color: rgba(255,255,255,.87);
+}
+.layout-column{
+	width: 100%;
+}
+.intro_content .md-button {
+	width: 100%;
+	min-height: 75px;
+	padding: 0 15px;
+	margin: 0;
+	text-align: left;
+	font-size: 20px;
+	text-transform: none;
+	color: rgba(0,0,0,.87);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
+				0 3px 6px rgba(0,0,0,0.23);
+	letter-spacing: 0em;
+}
+.intro_content{
+	padding: 30px;
+}
+md-list-item{
+	padding: 15px;
+}
+.md-subhead{
+	color: rgba(0,0,0,.54);
+}

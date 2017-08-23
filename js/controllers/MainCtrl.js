@@ -2,7 +2,7 @@
 
 	var app = angular.module('mrTsybranCV');
   
-	var MainCtrl = function($rootScope, $location, ){
+	var MainCtrl = function($rootScope, $location){
 
     	var str = 20,
 			height = str / $(window).height(),
@@ -18,7 +18,8 @@
 		});
 
     	$rootScope.creator = 'Markian Tsybran';
-    	
+    	$rootScope.maxViewWidth = $(window).width() - 424;
+
     	var setCurMenu = function(){
     		$('.active_menu').removeClass('active_menu');
     		var curMenu = $location.path().replace('/', '') || 'about';

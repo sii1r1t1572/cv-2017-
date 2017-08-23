@@ -9,6 +9,7 @@ general-info{
 	position: relative;
 	opacity: 1;
 	transition: opacity .3s ease-in-out;
+	min-width: 250px;
 }
 general-info.ng-hide{
 	opacity: 0;
@@ -77,4 +78,11 @@ h3.md-title{
 	right: 7px;
 	background: transparent;
 	box-shadow: none;
+}
+.git #git.md-button {
+	cursor: url('../images/cursor_white.png'), auto;
+}
+md-tooltip .md-content.md-show {
+	background: rgba(255,255,255,.87);
+	color: rgba(0,0,0,.54);
 }
