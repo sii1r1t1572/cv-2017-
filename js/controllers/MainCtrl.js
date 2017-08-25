@@ -2,7 +2,8 @@
 
 	var app = angular.module('mrTsybranCV');
   
-	var MainCtrl = function($rootScope, $location){
+	var MainCtrl = function($rootScope, $location, 
+							$timeout){
 
     	var str = 20,
 			height = str / $(window).height(),
@@ -30,6 +31,10 @@
     	$rootScope.$on('$routeChangeSuccess', function(){
     		setCurMenu();
  	  	});
+		$timeout(hideLoader, 1000);
+		function hideLoader(){
+			$('md-progress-linear').addClass('loaded');
+		};
 	};
 
 	app.controller('MainCtrl', MainCtrl);
