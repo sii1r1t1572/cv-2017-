@@ -1,3 +1,97 @@
-<div>
-
-</div>
+<h2 class='md-headline'>
+	Front-end
+</h2>
+<md-list>
+	<md-list-item class='md-2-line' layout='row'
+	  			layout-wrap ng-repeat='item in frontend'>
+		<div class='md-item-text md-whiteframe-z1' flex>
+	  		<div class='selected_skill' ng-show='item.used'>
+	  			<p>Used on this site</p>
+	  			<md-icon>done</md-icon>
+	  		</div>
+	  		<h3>{{ item.title }}</h3>
+		</div>
+	</md-list-item>
+</md-list>
+<h2 class='md-headline'>
+	Back-end
+</h2>
+<md-list>
+	<md-list-item class='md-2-line' layout='row'
+	  			layout-wrap ng-repeat='item in backend'>
+		<div class='md-item-text md-whiteframe-z1' flex>
+	  		<h3>{{ item.title }}</h3>
+		</div>
+	</md-list-item>
+</md-list>
+<h2 class='md-headline'>
+	UI/UX & Editors
+</h2>
+<md-list>
+	<md-list-item class='md-2-line' layout='row'
+	  			layout-wrap ng-repeat='item in graphics'>
+		<div class='md-item-text md-whiteframe-z1' flex>
+			<div class='selected_skill' ng-show='item.used'>
+	  			<p>Used on this site</p>
+	  			<md-icon>done</md-icon>
+	  		</div>
+	  		<h3>{{ item.title }}</h3>
+		</div>
+	</md-list-item>
+</md-list>
+<h2 class='md-headline'>
+	CMS
+</h2>
+<md-list>
+  	<md-list-item class='md-2-line' layout='row'
+      			layout-wrap ng-repeat='item in cms'>
+    	<div class='md-item-text md-whiteframe-z1' flex>
+      		<h3>{{ item.title }}</h3>
+    	</div>
+ 	 </md-list-item>
+</md-list>
+<h2 class='md-headline'>
+	PM & Team Collaboration
+</h2>
+<md-list>
+  	<md-list-item class='md-2-line' layout='row'
+      			layout-wrap ng-repeat='item in pm'>
+    	<div class='md-item-text md-whiteframe-z1' flex>
+    		<div class='selected_skill' ng-show='item.used'>
+	  			<p>Used on this site</p>
+	  			<md-icon>done</md-icon>
+	  		</div>
+      		<h3>{{ item.title }}</h3>
+    	</div>
+ 	 </md-list-item>
+</md-list>
+<h2 class='md-headline'>
+	SCM
+</h2>
+<md-list>
+  	<md-list-item class='md-2-line' layout='row'
+      			layout-wrap ng-repeat='item in scm'>
+    	<div class='md-item-text md-whiteframe-z1' flex>
+    		<div class='selected_skill' ng-show='item.used'>
+	  			<p>Used on this site</p>
+	  			<md-icon>done</md-icon>
+	  		</div>
+      		<h3>{{ item.title }}</h3>
+    	</div>
+ 	 </md-list-item>
+</md-list>
+<h2 class='md-headline'>
+	Operating Systems
+</h2>
+<md-list>
+  	<md-list-item class='md-2-line' layout='row'
+      			layout-wrap ng-repeat='item in os'>
+    	<div class='md-item-text md-whiteframe-z1' flex>
+    		<div class='selected_skill' ng-show='item.used'>
+	  			<p>Used on this site</p>
+	  			<md-icon>done</md-icon>
+	  		</div>
+      		<h3>{{ item.title }}</h3>
+    	</div>
+ 	 </md-list-item>
+</md-list>

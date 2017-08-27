@@ -1,3 +1,37 @@
-<div>
-
+<h2 class='md-headline'>
+	Educational Institution
+</h2>
+<div class='md-title'>
+	From the beginning of my study, 
+</div>
+<h2 class='md-headline'>
+	Languages
+</h2>
+<div class='languages_content md-title'>
+	<div>
+		<div class='language' ng-repeat='language in languages1'>
+			<md-slider-container ng-disabled='true'>
+				<h5>{{ language.title }}</h5>
+		        <md-slider ng-model='language.val' md-discrete 
+		        		   md-vertical ng-readonly='true'></md-slider>
+		        <p class='md-subhead'>{{ language.subtext }}</p>
+	      	</md-slider-container>
+		</div>
+	</div>
+	<div>
+		<div class='language' ng-repeat='language in languages2'>
+			<md-slider-container ng-disabled='true'>
+				<h5>{{ language.title }}</h5>
+		        <md-slider ng-model='language.val' md-discrete 
+		        		   md-vertical ng-readonly='true'></md-slider>
+		        <p class='md-subhead'>{{ language.subtext }}</p>
+	      	</md-slider-container>
+	    </div>
+	</div>
+</div>
+<h2 class='md-headline'>
+	Courses & Classes
+</h2>
+<div class='md-title'>
+	
 </div>

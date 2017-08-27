@@ -4,8 +4,7 @@
   
   	var NavCtrl = function(icons, $scope){
 
-		$scope.items = icons.menuIcons;	
-		
+		$scope.items = icons.menuIcons;
 	};
 		
 	app.controller('NavCtrl', NavCtrl);

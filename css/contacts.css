@@ -1,0 +1,8 @@
+#skype_button p {
+	margin: 0;
+}
+#skype_button img {
+	margin: 0 !important;
+	width: 100px;
+	opacity: .87;
+}
