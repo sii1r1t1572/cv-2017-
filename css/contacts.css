@@ -6,3 +6,11 @@
 	width: 100px;
 	opacity: .87;
 }
+.skype .bubble .lwc-chat-button {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	background: transparent !important;
+	box-shadow: none;
+	cursor: url('../images/cursor_black.png'), auto;
+}

@@ -37,10 +37,6 @@ h3:first-of-type .md-button:hover{
 				0 3px 6px rgba(0,0,0,0.23);
 	letter-spacing: 0em;
 }
-.intro_content,
-.about_content{
-	padding: 30px;
-}
 md-list-item{
 	padding: 15px;
 }

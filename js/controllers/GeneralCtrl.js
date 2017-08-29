@@ -2,20 +2,20 @@
 
 	var app = angular.module('mrTsybranCV');
   
-	var GeneralCtrl = function($animate, $scope, $rootScope, $timeout){
-		$scope.$on('$routeChangeStart', function(){
-			$scope.hideView = true;
-			// console.log(!$('md-progress-linear.loading_view').length);
-			// if(!$('md-progress-linear.loading_view').length){
-			// 	var viewEl = $('.page > div');
-			// 	$('md-progress-linear').width(viewEl.width());
-			// 	$('md-progress-linear').addClass('loading_view');
-			// 	$scope.hideView = true;
-			// } else {
-			// 	$scope.hideView = true;
-			// 	$('md-progress-linear').removeClass('invisible_loader');
-			// }
-		});
+	var GeneralCtrl = function($scope, $rootScope){
+		// $scope.$on('$routeChangeStart', function(){
+		// 	$scope.hideView = true;
+		// 	// console.log(!$('md-progress-linear.loading_view').length);
+		// 	// if(!$('md-progress-linear.loading_view').length){
+		// 	// 	var viewEl = $('.page > div');
+		// 	// 	$('md-progress-linear').width(viewEl.width());
+		// 	// 	$('md-progress-linear').addClass('loading_view');
+		// 	// 	$scope.hideView = true;
+		// 	// } else {
+		// 	// 	$scope.hideView = true;
+		// 	// 	$('md-progress-linear').removeClass('invisible_loader');
+		// 	// }
+		// });
 
 		$scope.$on('$viewContentLoaded', function(){
 		    this.about = {
@@ -103,6 +103,32 @@
 					'Skills'
 				};
 
+			this.contacts = {
+				inputs: 
+			    	[{
+						label: 'E-mail',
+						text: 'mr.tsybran@gmail.com',
+						class: 'md-full'
+					}, {
+						label: 'Phone',
+						text: '+380(730)347607',
+						class: 'md-full'
+					}, {
+						label: 'Location',
+						text: 'Ukraine',
+						class: 'md-half'
+					}, {
+						text: 'Lviv',
+						class: 'md-half'
+					}, {
+						label: 'Skype',
+						text: 'kerka121',
+						class: 'md-half'
+					}],
+				heading: 
+					'Contacts'
+				};
+
 			if($rootScope.curMenu == 'contacts'){
 				$scope.infClass = 'contacts_card';
 			} else {
@@ -112,12 +138,12 @@
 			$scope.inputs = this[$rootScope.curMenu].inputs;
 			$scope.heading = this[$rootScope.curMenu].heading;
 
-			$timeout(hideLoader, 1200);
+			// $timeout(hideLoader, 1200);
 
-			function hideLoader(){
-				$scope.hideView = false;
-				// $('md-progress-linear').addClass('invisible_loader');
-			};
+			// function hideLoader(){
+			// 	$scope.hideView = false;
+			// 	// $('md-progress-linear').addClass('invisible_loader');
+			// };
 	  	});
 		
 	};

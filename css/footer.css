@@ -3,6 +3,7 @@ footer {
 	width: 100%;
 	height: 56px;
 	bottom: 10px;
+	pointer-events: none;
 }
 footer #fingerprint.md-button {
 	margin: 0;
@@ -17,6 +18,10 @@ footer .md-is-open #fingerprint.md-button{
 md-fab-toolbar.md-left md-fab-trigger{
 	position: absolute;
 	right: 18px;
+	pointer-events: auto;
+}
+footer .md-is-open md-fab-actions .md-button{
+	pointer-events: auto;
 }
 md-fab-trigger:hover,
 footer .md-button,
