@@ -28,6 +28,7 @@ BASIC STYLE
 	overflow: hidden;
 	width: auto;
 	height: auto;
+	min-height: 100%;
 }
 
 /* 

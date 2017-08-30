@@ -111,7 +111,7 @@
 						class: 'md-full'
 					}, {
 						label: 'Phone',
-						text: '+380(730)347607',
+						text: '+380 (730) 347607',
 						class: 'md-full'
 					}, {
 						label: 'Location',
@@ -123,7 +123,7 @@
 					}, {
 						label: 'Skype',
 						text: 'kerka121',
-						class: 'md-half'
+						class: 'md-half md-skype'
 					}],
 				heading: 
 					'Contacts'

@@ -36,6 +36,7 @@
 	transform: translateY(-44px);
 	transition: transform .3s ease-in-out;
 }
+
 .page .md-item-text.md-whiteframe-z1:hover .selected_skill{
 	transform: translateY(0);
 }
