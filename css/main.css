@@ -16,6 +16,55 @@ h5 {
 	padding: 10px;
 	box-sizing: border-box;
 }
+
+md-input-container.ng-enter{
+	opacity: 0;
+	transition: all .3s ease-in-out;
+	transition-delay: .3s;
+}
+.view.ng-animate{
+	transition: all .5s linear;
+}
+.view.ng-enter{
+	opacity: 0;
+}
+md-input-container.ng-leave, 
+md-input-container.ng-enter.ng-enter-active,
+.view.ng-leave, 
+.view.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+md-input-container.ng-leave.ng-leave-active,
+.view.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+/*.view.ng-enter, .view.ng-leave,
+.anim.ng-anchor{
+  transition:  1.3s ease-in-out;
+}*/
+/*.view.ng-enter {
+  transform: translateY(-100%);
+}*/
+/*.view.ng-enter.ng-enter-active, .view.ng-leave {*/
+  /*opacity: 0;*/
+  /*transform: translateY(100%);*/
+/*}*/
+/*.view.ng-leave.ng-leave-active {*/
+ /* opacity: 1;*/
+  /*transform: translateY(100%);*/
+/*}*/
+/*.anim.ng-anchor-out{*/
+/*	opacity: 0;*/
+/*}*/
+/*.anim.ng-anchor-in{*/
+/*	opacity: 1;*/
+/*}*/
+/*.mCustomScrollbar + div.ng-animate {
+  transition: 3.5s linear all;
+}*/
+/*.mCustomScrollbar.ng-enter.ng-enter-active{
+	opacity: 1;
+}*/
 nav-menu {
 	display: block;
 	width: 72px;
@@ -83,4 +132,7 @@ general-info.contacts_card{
 .content_block{
 	padding: 30px;
 	letter-spacing: 0.02em;
+}
+@media all and (orientation: landscape), all and (min-width: 480px) { 
+	
 }

@@ -48,13 +48,21 @@
 	max-height: 108px;
 	min-height: 108px;
 }
-
+#send_form .md-datepicker-button.md-icon-button {
+	margin: 0;
+	margin-left: 85px;
+	z-index: 99;
+	cursor: url('../images/cursor_white.png'), auto;
+}
+#send_form .md-datepicker-triangle-button.md-button{
+	cursor: url('../images/cursor_white.png'), auto;
+}
 #send_form label,
 #send_form input,
 #send_form textarea,
 #send_form .md-char-counter,
 #send_form md-input-container label.md-required::after{
-	color: rgba(255,255,255,.54);
+	color: rgba(255,255,255,.87);
 }
 #send_form input,
 #send_form textarea{
@@ -64,12 +72,12 @@
 #send_form md-input-container.md-input-invalid .md-char-counter{
 	color: rgba(255,255,255,.87);
 }
-#send_form .md-button[type="submit"] {
+#send_form .md-button[type='submit'] {
 	position: absolute;
 	bottom: 15px;
-	left: ;
-	right: 30px;
+	right: 20px;
 	color: rgba(255,255,255,.87);
+	cursor: url('../images/cursor_white.png'), auto;
 }
 #send_form .md-datepicker-calendar-icon {
 	color: rgba(255,255,255,.54);
@@ -77,6 +85,30 @@
 #send_form .md-datepicker-expand-triangle {
 	border-top-color: rgba(255,255,255,.87);
 }
+#send_form .md-input-messages-animation.md-auto-hide {
+	position: absolute;
+	top: 35px;
+}
 #send_form .md-datepicker-input-container {
 	border-bottom-color: rgba(255,255,255,.87);
+	margin-left: -35px;
+}
+#send_form h3 {
+	margin: 0;
+	font-size: 16px;
+	color: rgba(255,255,255,.87);
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	margin-bottom: 10px;
+}
+.email_form md-input-container:first-of-type {
+	width: 217px;
+}
+.email_form md-input-container:nth-of-type(2) {
+	width: 217px;
+	margin-left: 44px;
+}
+.email_form md-input-container:nth-of-type(3) {
+	width: 217px;
+	margin-left: 26px;
 }
