@@ -1,8 +1,9 @@
 (function(){
-  
+
   angular
     .module('mrTsybranCV', ['ngRoute', 'ngMaterial', 'ngAnimate'])
-    .config(function($routeProvider){
+    .config(function($routeProvider, $locationProvider){
+      $locationProvider.hashPrefix();
       $routeProvider
         .when('/', {
           templateUrl: 'content/views/about.html',
@@ -21,6 +22,10 @@
           controller: 'ContactsCtrl'
         })
         .otherwise({redirectTo:'/'});
+        $locationProvider.html5Mode({
+          enabled: true,
+          requireBase: false
+        });
   });
-  
+
 }());
