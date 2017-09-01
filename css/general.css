@@ -5,7 +5,7 @@ general-info{
 	background-color: rgba(0,0,0,.54);
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
 				0 3px 6px rgba(0,0,0,0.23);
-	cursor: url('../images/cursor_white.png'), auto;
+	cursor: url('../images/cursor_black.png'), auto;
 	position: relative;
 	opacity: 1;
 	transition: opacity .3s ease-in-out;
@@ -67,7 +67,7 @@ h3.md-title{
 	display: none;
 }
 .profile_card md-input-container .md-input[disabled]:hover{
-	cursor: url('../images/cursor_white.png'), auto;
+	cursor: inherit;
 }
 .profile_card md-input-container.md-input-has-value label{
 	overflow: visible;
@@ -119,10 +119,11 @@ h3.md-title{
 
 .resources .zip .md-button, 
 .resources .pdf .md-button {
-	min-width: 0px;
 	margin: 0;
 	cursor: inherit;
 	padding: 1px 7px 0 7px;
+	min-width: auto;
+	width: 40px;
 }
 .git{
 	width: 60px;
@@ -134,6 +135,7 @@ h3.md-title{
 	background-image: url('../images/git_mark.png');
 	background-size: 60px 60px;
 	transition: box-shadow .5s ease-in-out;
+	cursor: inherit;
 }
 .git:hover{
 	box-shadow: 0 5px 28px rgba(255,255,255,0.25), 
@@ -148,8 +150,23 @@ h3.md-title{
 	background: transparent;
 	box-shadow: none;
 }
-.git #git.md-button {
+.resources > a{
+	outline: none;
+}
+.resources > a:hover{
 	cursor: url('../images/cursor_white.png'), auto;
+}
+.resources > a button{
+	cursor: inherit;
+}
+.resources #git button {
+	width: inherit;
+	height: inherit;
+	min-width: auto;
+	margin: 0;
+	padding: 0;
+	border-radius: 50%;
+	right: 7px;
 }
 md-tooltip .md-content.md-show {
 	background: rgba(255,255,255,.87);

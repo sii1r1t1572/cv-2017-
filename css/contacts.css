@@ -6,13 +6,17 @@
 	width: 100px;
 	opacity: .87;
 }
+.skype-chat .lwc-chat-frame {
+	bottom: 10px;
+	right: 15px;
+}
 .skype .bubble .lwc-chat-button {
 	position: absolute;
 	bottom: 15px;
 	right: 20px;
 	background: transparent !important;
 	box-shadow: none;
-	cursor: url('../images/cursor_black.png'), auto;
+	cursor: url('../images/cursor_white.png'), auto;
 	z-index: 1;
 }
 /* {

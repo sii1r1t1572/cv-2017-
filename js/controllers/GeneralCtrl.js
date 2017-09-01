@@ -16,7 +16,13 @@
 		// 	// 	$('md-progress-linear').removeClass('invisible_loader');
 		// 	// }
 		// });
-
+		Skype.ui({
+	         "name": "call",
+	         "element": "skype_button",
+	         "participants": ["kerka121"],
+	         "imageSize": 12
+	         });
+		
 		$scope.$on('$viewContentLoaded', function(){
 		    this.about = {
 		    	inputs: 

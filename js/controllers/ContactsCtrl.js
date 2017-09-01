@@ -4,13 +4,7 @@
   
 	var ContactsCtrl = function($timeout, $scope){
 
-    	Skype.ui({
-	         "name": "call",
-	         "element": "skype_button",
-	         "participants": ["kerka121"],
-	         "imageSize": 32
-	         });
-    	$timeout($('#skype_button img').attr('src', '../images/bg_patt.png'),2000);
+    	// $timeout($('#skype_button img').attr('src', '../images/bg_patt.png'),2000);
     	
     	$('form').on('submit', function(e){
     		e.preventDefault();

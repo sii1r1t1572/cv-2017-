@@ -3,7 +3,7 @@
   angular
     .module('mrTsybranCV', ['ngRoute', 'ngMaterial', 'ngAnimate'])
     .config(function($routeProvider, $locationProvider){
-      $locationProvider.hashPrefix();
+      // $locationProvider.hashPrefix();
       $routeProvider
         .when('/', {
           templateUrl: 'content/views/about.html',
@@ -22,10 +22,10 @@
           controller: 'ContactsCtrl'
         })
         .otherwise({redirectTo:'/'});
-        $locationProvider.html5Mode({
-          enabled: true,
-          requireBase: false
-        });
+        // $locationProvider.html5Mode({
+        //   enabled: true,
+        //   requireBase: false
+        // });
   });
 
 }());
