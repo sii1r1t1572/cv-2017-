@@ -13,7 +13,7 @@ h2{
 	color: rgba(255,255,255,.87);
 	text-align: right;
 	width: 100%;
-	background: rgb(0,0,0,.54);
+	background: rgba(0,0,0,.54);
 	padding: 15px;
 	padding-right: 30px;
 	margin: 0;
@@ -151,6 +151,6 @@ general-info.contacts_card{
 	letter-spacing: 0.02em;
 	font-family: 'Titillium Web', sans-serif;
 }
-@media all and (orientation: landscape), all and (min-width: 480px) { 
+@media all and (max-width: 1024px), all and (max-height: 590px) { 
 	
 }
