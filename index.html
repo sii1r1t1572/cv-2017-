@@ -21,6 +21,7 @@
     <link rel='stylesheet' href='css/skills.css'>
     <link rel='stylesheet' href='js/lib/jquery.mCustomScrollbar.css'>
     <link rel='stylesheet' href='css/footer.css'>
+    <link rel='stylesheet' href='css/gag.css'>
     <!-- Skype -->
     <script src='https://secure.skypeassets.com/i/scom/js/skype-uri.js'></script>
     <!-- Angular Material Library -->
@@ -40,6 +41,7 @@
     <script src='js/nav.js'></script>
     <script src='js/general.js'></script>
     <script src='js/footer.js'></script>
+    <script src='js/gag.js'></script>
     <script src='js/services/setMenu.js'></script>
     <script src='js/services/bodyAnim.js'></script>
     <script src='js/controllers/MainCtrl.js'></script>
@@ -60,12 +62,11 @@
       </general-info>
       <div class='mCustomScrollbar' data-mcs-theme='rounded-dots-dark'>
         <div ng-view ng-cloak class='view'></div>
-        <md-progress-linear class='loading_view' md-mode='indeterminate' ng-show='hideView'>
-        </md-progress-linear>
       </div>
       <nav-menu></nav-menu>
     </div>
     <footer></footer>
+    <gag></gag>
   </body>
 
 </html>

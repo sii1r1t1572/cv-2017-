@@ -1,0 +1,55 @@
+gag{
+	background: rgba(0,0,0,.54);
+}
+gag, gag > div,
+gag .gag_content{
+	width: 100%;
+	height: 100%;
+}
+gag .gag_content {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: rgba(255,255,255,.87);
+	letter-spacing: 0.005em;
+	font-family: 'Titillium Web', sans-serif;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 17px;
+	max-width: 500px;
+}
+gag h2 {
+	font-size: 20px;
+	text-align: right;
+	padding: 15px;
+	background: rgba(255,255,255,.87);
+	color: rgba(0,0,0,.54);
+}
+.gag_resources a {
+	text-decoration: none;
+	outline: none;
+	cursor: url('../images/cursor_white.png'), auto;
+}
+.gag_resources .material-icons {
+	font-size: 36px;
+	color: rgba(255,255,255,.87);
+}
+.gag_resources .md-fab.md-button {
+	color: rgba(0,0,0,0.54);
+	background: rgba(255,255,255,.87);
+	font-weight: 600;
+	cursor: inherit;
+}
+.gag_resources .md-fab.md-button:hover,
+.gag_resources .md-fab.md-button.md-focused{
+	background: rgba(0,0,0,0.27);
+	color: rgba(255,255,255,.87);	
+}
+.gag_resources {
+	margin-top: 50px;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 220px;
+}
