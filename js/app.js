@@ -4,7 +4,6 @@
     .module('mrTsybranCV', ['ngRoute', 'ngMaterial', 'ngAnimate', 'ngMessages'])
     .config(function($routeProvider, $locationProvider){
       $locationProvider.hashPrefix();
-      $locationProvider.html5Mode(true);
       $routeProvider
         .when('/', {
           templateUrl: 'content/views/about.html',
