@@ -1,0 +1,230 @@
+general-info{
+	width: 250px;
+	height: 400px;
+	margin: 0 20px;
+	background-color: rgba(0,0,0,.54);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
+				0 3px 6px rgba(0,0,0,0.23);
+	cursor: url('../images/cursor_black.png'), auto;
+	position: relative;
+	min-width: 250px;
+}
+/*general-info.ng-enter{
+	opacity: 0;
+}*/
+/*general-info.ng-leave.ng-leave-active{
+	opacity: 0;
+}*/
+.view.ng-enter,
+md-input-container.ng-enter,
+.skype.ng-hide-remove,
+.resources.ng-hide-remove{
+	opacity: 0;
+	animation-name: showOpacity;
+	animation-duration: .6s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+.view.ng-leave,
+md-input-container.ng-leave,
+.skype.ng-hide-add,
+.resources.ng-hide-add{
+	opacity: 0;
+}
+.profile_card {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	width: 100%;
+	height: 330px;
+	overflow: hidden;
+	padding: 15px;
+	box-sizing: border-box;
+}
+.contacts_card .profile_card{
+	height: 296px;
+}
+h3.md-title{
+	width: 100%;
+	height: 20px;
+	color: rgba(255, 255, 255, .87);
+	margin: 0;
+	text-align: right;
+}
+.profile_card md-input-container{
+	height: 30px;
+	margin-bottom: 0;
+}
+.profile_card md-input-container.md-full{
+	width: 100%;
+}
+.profile_card md-input-container.md-full.md-small{
+	font-size: 14px;
+}
+.profile_card md-input-container.md-half{
+	width: 99px;
+}
+.profile_card md-input-container.md-half.md-exp {
+	width: 75px;
+	margin-top: 0;
+}
+.profile_card md-input-container.md-third{
+	width: 60px;
+}
+.profile_card md-input-container.md-third.md-exp{
+	width: 40px;
+}
+.profile_card md-input-container.md-third.md-expm input{
+	text-align: center;
+}
+.profile_card md-input-container.md-half.md-skype {
+	position: absolute;
+	bottom: 30px;
+	left: 35px;
+}
+.profile_card md-input-container .md-input[disabled]{
+	border-bottom: 1px solid rgba(255, 255, 255,.87);
+	color: rgba(255, 255, 255, .87);
+}
+.profile_card md-input-container.md-exp.md-half .md-input[disabled] {
+	border-bottom: 0;
+}
+.profile_card md-input-container.md-skype .md-input[disabled] {
+	border-bottom: none;
+	font-size: 24px;
+}
+.profile_card md-input-container.md-hidden .md-input[disabled] {
+	display: none;
+}
+.profile_card md-input-container .md-input[disabled]:hover{
+	cursor: inherit;
+}
+.profile_card md-input-container.md-input-has-value label{
+	overflow: visible;
+	font-size: 16px;
+	color: rgba(255, 255, 255, .87);
+}
+.profile_card md-input-container.md-half.md-exp label{
+	font-weight: 600;
+	color: rgba(255, 255, 255, .54);
+}
+.profile_card md-input-container.md-input-has-value.md-skype label,
+.profile_card md-input-container.md-input-has-value.md-skype label:before {
+	font-size: 48px;
+	color: rgba(26,178,243,.54);
+	left: -20px;
+	top: -55px;
+	display: block;
+	width: 100px;
+	letter-spacing: 0.05em;
+}
+.profile_card md-input-container.md-input-has-value.md-skype label::before {
+	content: 'Skype';
+	color: rgba(255,255,255,.87);
+	position: absolute;
+	top: -2px;
+	z-index: -1;
+	left: 6px;
+}
+.profile_card md-input-container.md-input-has-value .pre_label {
+	color: rgba(255,255,255,.87);
+	text-align: right;
+	max-width: 300px;
+	width: 287px;
+	font-size: 16px;
+	font-weight: 800;
+}
+.resources {
+	padding-left: 15px;
+	line-height: 70px;
+	opacity: 1;
+	z-index: 99;
+	transition: opacity .3s ease-out;
+}
+.resources.ng-hide{
+	opacity: 0;
+}
+.resources .material-icons {
+	color: rgba(255,255,255,.87);
+}
+.resources .zip, 
+.resources .pdf {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 800;
+	outline: none;
+	color: rgba(255,255,255,.87);
+	cursor: inherit;
+}
+
+.resources .zip .md-button, 
+.resources .pdf .md-button {
+	margin: 0;
+	cursor: inherit;
+	padding: 1px 7px 0 7px;
+	min-width: auto;
+	width: 40px;
+}
+.git{
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+	background-image: url('../images/git_mark.png');
+	background-size: 60px 60px;
+	transition: box-shadow .5s ease-in-out;
+	cursor: inherit;
+}
+.git:hover{
+	box-shadow: 0 5px 28px rgba(255,255,255,0.25), 
+				0 3px 10px rgba(255,255,255,0.22);
+}
+.git #git.md-button {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	bottom: 10px;
+	right: 7px;
+	background: transparent;
+	box-shadow: none;
+}
+.resources > a{
+	outline: none;
+}
+.resources > a:hover{
+	cursor: url('../images/cursor_white.png'), auto;
+}
+.resources > a button{
+	cursor: inherit;
+}
+.resources #git button {
+	width: inherit;
+	height: inherit;
+	min-width: auto;
+	margin: 0;
+	padding: 0;
+	border-radius: 50%;
+	right: 7px;
+}
+md-tooltip .md-content.md-show {
+	background: rgba(255,255,255,.87);
+	color: rgba(0,0,0,.54);
+}
+.loading_view {
+	opacity: 1;
+	top: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: url('../images/bg_patt.png');
+	transition: opacity .3s ease-in-out;
+}
+
+/*.loaded.loading_view.ng-hide{
+	opacity: 0;
+}*/
+/*.loaded.loading_view.invisible_loader{
+	opacity: 0;
+}*/

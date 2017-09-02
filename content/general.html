@@ -1,3 +1,39 @@
-<div>
-	
+<div class='profile_card'>
+	<h3 class='md-title'>
+		{{ heading }}
+	</h3>
+	<md-input-container ng-repeat='input in inputs' ng-class='input.class'>
+		<label class='pre_label' ng-show='input.preLabel'>
+			{{ input.preLabel }}
+		</label>
+		<label>{{ input.label }}</label>
+		<input value='{{ input.text }}' disabled>
+	</md-input-container>	
+</div>
+<div class='resources' ng-hide='infClass'>
+	<md-icon aria-label='file_download'>
+		file_download
+	</md-icon>
+	<!-- href='./downloads/www.zip' download='cvtsybran.zip' target='_blank' -->
+	<a class='zip' href='#' target='_blank'>
+		<md-button>
+			zip
+		</md-button>
+	</a>
+	<a class='pdf' href='./downloads/my_cv.pdf' download='cvtsybran.pdf' target='_blank'>
+		<md-button>
+			pdf
+		</md-button>
+	</a>
+	<a class='git' href='https://github.com/sii1r1t1572/cv-2017-' target='_blank'>
+		<md-button id='git' class='md-fab'>
+			<md-tooltip md-delay='500' md-direction='left' class='git_tooltip'>
+				View source code on GitHub!
+			</md-tooltip>
+		<md-button>
+	</a>
+</div>
+<div class='skype' ng-hide='!infClass'>
+	<span class="skype-button bubble " data-contact-id="kerka121" data-color="#1ab2f3"></span>
+	<span class="skype-chat" data-color-message="#000000"></span>
 </div>
