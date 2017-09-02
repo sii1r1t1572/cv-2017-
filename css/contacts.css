@@ -1,6 +1,4 @@
-#skype_button p {
-	margin: 0;
-}
+
 #skype_button img {
 	margin: 0 !important;
 	width: 100px;
@@ -26,7 +24,7 @@
 }
 .*/
 #send_form {
-	padding: 0 30px;
+	padding: 13px 30px 0;
 }
 .email_form {
 	width: 550px;
@@ -42,11 +40,14 @@
 	width: 239px;
 	margin: 30px 0 0;
 }
-.int_date{
+.int_date {
 	display: inline-block;
+	position: relative;
+	top: -10px;
 }
 .email_form .int_offer{
 	width: 100%;
+	margin-top: 0px;
 }
 .int_offer textarea {
 	max-height: 108px;
@@ -60,6 +61,7 @@
 }
 #send_form .md-datepicker-triangle-button.md-button{
 	cursor: url('../images/cursor_white.png'), auto;
+	top: 1px;
 }
 #send_form label,
 #send_form input,
@@ -67,6 +69,11 @@
 #send_form .md-char-counter,
 #send_form md-input-container label.md-required::after{
 	color: rgba(255,255,255,.87);
+}
+#send_form .md-datepicker-input {
+	padding-left: 34px;
+	width: 115px;
+	min-width: auto;
 }
 #send_form input,
 #send_form textarea{
@@ -79,7 +86,7 @@
 #send_form .md-button[type='submit'] {
 	position: absolute;
 	bottom: 15px;
-	right: 20px;
+	right: 22px;
 	color: rgba(255,255,255,.87);
 	cursor: url('../images/cursor_white.png'), auto;
 }
@@ -115,4 +122,14 @@
 .email_form md-input-container:nth-of-type(3) {
 	width: 217px;
 	margin-left: 26px;
+	position: relative;
+	top: -10px;
+}
+.submit_preloader {
+	position: absolute;
+	bottom: 17px;
+	right: 32px;
+}
+.submit_preloader md-progress-circular path{
+	stroke: rgba(255,255,255,.87);
 }

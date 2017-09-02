@@ -33,6 +33,9 @@
           <label>Offer</label>
           <textarea required ng-model='interviewer.offer' md-maxlength='1000' rows='4' md-select-on-focus></textarea>
         </md-input-container>
-         <md-button type='submit'>Submit</md-button>
-	</form>
+         <md-button ng-hide='sendingForm' type='submit'>Submit</md-button>
+         <div ng-show='sendingForm' class='submit_preloader'>
+          <md-progress-circular class='submit_preloader' md-diameter='20px'></md-progress-circular>
+	       </div>
+  </form>
 </div>

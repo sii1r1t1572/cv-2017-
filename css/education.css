@@ -17,10 +17,10 @@
 	line-height: 28px;
 }
 .language md-slider-container {
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 }
 .language .md-subhead {
-	min-width: 115px;
+	min-width: 126px;
 	line-height: 1;
-	text-align: left;
+	height: auto;
 }

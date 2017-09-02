@@ -57,7 +57,10 @@ footer md-fab-actions .md-button{
 	min-width: 36px;
 }
 footer .creator{
-	line-height: 56px;
+	line-height: 60px;
+}
+footer .creator .material-icons {
+	margin-top: -4px;
 }
 footer .copyrights {
 	line-height: 20px;

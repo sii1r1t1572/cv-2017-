@@ -1,9 +1,9 @@
 (function(){
 
   angular
-    .module('mrTsybranCV', ['ngRoute', 'ngMaterial', 'ngAnimate'])
+    .module('mrTsybranCV', ['ngRoute', 'ngMaterial', 'ngAnimate', 'ngMessages'])
     .config(function($routeProvider, $locationProvider){
-      // $locationProvider.hashPrefix();
+      $locationProvider.hashPrefix();
       $routeProvider
         .when('/', {
           templateUrl: 'content/views/about.html',
@@ -17,15 +17,16 @@
           templateUrl: 'content/views/skills.html',
           controller: 'SkillsCtrl'
         })
+        .when('/experience', {
+          templateUrl: 'content/views/experience.html'
+          // controller: 'ContactsCtrl'
+        })
         .when('/contacts', {
           templateUrl: 'content/views/contacts.html',
           controller: 'ContactsCtrl'
         })
         .otherwise({redirectTo:'/'});
-        // $locationProvider.html5Mode({
-        //   enabled: true,
-        //   requireBase: false
-        // });
+        $locationProvider.html5Mode(true);
   });
 
 }());

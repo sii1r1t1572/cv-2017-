@@ -7,11 +7,28 @@ general-info{
 				0 3px 6px rgba(0,0,0,0.23);
 	cursor: url('../images/cursor_black.png'), auto;
 	position: relative;
-	opacity: 1;
-	transition: opacity .3s ease-in-out;
 	min-width: 250px;
 }
-general-info.ng-hide{
+/*general-info.ng-enter{
+	opacity: 0;
+}*/
+/*general-info.ng-leave.ng-leave-active{
+	opacity: 0;
+}*/
+.view.ng-enter,
+md-input-container.ng-enter,
+.skype.ng-hide-remove,
+.resources.ng-hide-remove{
+	opacity: 0;
+	animation-name: showOpacity;
+	animation-duration: .6s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+.view.ng-leave,
+md-input-container.ng-leave,
+.skype.ng-hide-add,
+.resources.ng-hide-add{
 	opacity: 0;
 }
 .profile_card {
@@ -47,8 +64,18 @@ h3.md-title{
 .profile_card md-input-container.md-half{
 	width: 99px;
 }
+.profile_card md-input-container.md-half.md-exp {
+	width: 75px;
+	margin-top: 0;
+}
 .profile_card md-input-container.md-third{
 	width: 60px;
+}
+.profile_card md-input-container.md-third.md-exp{
+	width: 40px;
+}
+.profile_card md-input-container.md-third.md-expm input{
+	text-align: center;
 }
 .profile_card md-input-container.md-half.md-skype {
 	position: absolute;
@@ -58,6 +85,9 @@ h3.md-title{
 .profile_card md-input-container .md-input[disabled]{
 	border-bottom: 1px solid rgba(255, 255, 255,.87);
 	color: rgba(255, 255, 255, .87);
+}
+.profile_card md-input-container.md-exp.md-half .md-input[disabled] {
+	border-bottom: 0;
 }
 .profile_card md-input-container.md-skype .md-input[disabled] {
 	border-bottom: none;
@@ -73,6 +103,10 @@ h3.md-title{
 	overflow: visible;
 	font-size: 16px;
 	color: rgba(255, 255, 255, .87);
+}
+.profile_card md-input-container.md-half.md-exp label{
+	font-weight: 600;
+	color: rgba(255, 255, 255, .54);
 }
 .profile_card md-input-container.md-input-has-value.md-skype label,
 .profile_card md-input-container.md-input-has-value.md-skype label:before {
@@ -103,6 +137,12 @@ h3.md-title{
 .resources {
 	padding-left: 15px;
 	line-height: 70px;
+	opacity: 1;
+	z-index: 99;
+	transition: opacity .3s ease-out;
+}
+.resources.ng-hide{
+	opacity: 0;
 }
 .resources .material-icons {
 	color: rgba(255,255,255,.87);
