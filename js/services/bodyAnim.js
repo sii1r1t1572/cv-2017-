@@ -5,9 +5,8 @@
 	var bodyAnim = function($location) {
 
         var bindEvent = function(){
-            var str = 20,
-			height = str / $(window).height(),
-			width = str / $(window).width();
+            var str = 20, height = str / $(window).height(),
+						  width = str / $(window).width();
 	
 			$('body').mousemove(function(e){
 				var pageX = e.pageX - ($(window).width() / 2),

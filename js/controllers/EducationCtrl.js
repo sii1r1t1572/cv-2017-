@@ -20,7 +20,7 @@
 				val: 90
 			}, {
 				title: 'Polish',
-				subtext: 'Can understand but hard to speak',
+				subtext: 'Can understand but hard to speak.',
 				val: 50
 			}];
     	

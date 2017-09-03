@@ -22,6 +22,11 @@ h2{
 	box-sizing: border-box;
 	cursor: inherit;
 }
+h3{
+	margin: 0;
+	margin-top: 25px;
+	width: 100%;
+}
 h5 {
 	color: rgba(0,0,0,.54) !important;
 }
@@ -33,64 +38,22 @@ h5 {
 	padding: 10px;
 	box-sizing: border-box;
 }
-/*md-input-container.ng-enter{
-	opacity: 0;
-	transition: all .3s ease-in-out;
-	transition-delay: .3s;
-}
-.view.ng-animate{
-	transition: all .5s linear;
-}
-.view.ng-enter{
-	opacity: 0;
-}
-md-input-container.ng-leave, 
-md-input-container.ng-enter.ng-enter-active,
-.view.ng-leave, 
-.view.ng-enter.ng-enter-active {
-  opacity: 1;
-}
-md-input-container.ng-leave.ng-leave-active,
-.view.ng-leave.ng-leave-active {
-  opacity: 0;
-}*/
-/*.view.ng-enter, .view.ng-leave,
-.anim.ng-anchor{
-  transition:  1.3s ease-in-out;
-}*/
-/*.view.ng-enter {
-  transform: translateY(-100%);
-}*/
-/*.view.ng-enter.ng-enter-active, .view.ng-leave {*/
-  /*opacity: 0;*/
-  /*transform: translateY(100%);*/
-/*}*/
-/*.view.ng-leave.ng-leave-active {*/
- /* opacity: 1;*/
-  /*transform: translateY(100%);*/
-/*}*/
-/*.anim.ng-anchor-out{*/
-/*	opacity: 0;*/
-/*}*/
-/*.anim.ng-anchor-in{*/
-/*	opacity: 1;*/
-/*}*/
-/*.mCustomScrollbar + div.ng-animate {
-  transition: 3.5s linear all;
-}*/
-/*.mCustomScrollbar.ng-enter.ng-enter-active{
-	opacity: 1;
-}*/
 nav-menu {
 	display: block;
 	width: 72px;
 }
+.md-button{
+	margin: 10px 8px;
+}
+.md-subhead{
+	color: rgba(0,0,0,.54);
+}
+md-list-item{
+	padding: 15px;
+}
 nav-menu a {
 	text-decoration: none;
 	cursor: url('../images/cursor_white.png'), auto;
-}
-.md-button{
-	margin: 10px 8px;
 }
 .page > div {
 	flex-grow: 1;
@@ -106,9 +69,8 @@ nav-menu .md-button.md-fab.md-focused:not([disabled]){
 }
 .active_menu.md-button.md-fab,
 .active_menu.md-button.md-fab.md-focused,
-.tmp_active.md-button.md-fab{
-	background: rgba(0,0,0,.54);
-}
+.tmp_active.md-button.md-fab,
+md-progress-linear .md-bar,
 .page .md-button.md-fab:hover{
 	background: rgba(0,0,0,.54);
 }
@@ -140,27 +102,8 @@ md-progress-linear .md-container {
 	left: -50%;
 	width: inherit;
 }
-md-progress-linear .md-bar{
-	background-color: rgba(0,0,0, .54);
-}
-general-info.contacts_card{
-	background: linear-gradient(to bottom, rgba(0,0,0,.54) 0%, rgba(26,178,243,0.54) 100%);
-}
 .content_block {
 	padding: 30px;
 	letter-spacing: 0.02em;
 	font-family: 'Titillium Web', sans-serif;
-}
-gag{
-	display: none;
-}
-@media all and (max-width: 1024px), all and (max-height: 590px) { 
-	body + md-progress-linear,
-	.page,
-	footer {
-		display: none;
-	}
-	gag{
-		display: block;
-	}
 }

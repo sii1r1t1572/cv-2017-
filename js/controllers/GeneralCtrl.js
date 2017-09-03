@@ -3,26 +3,9 @@
 	var app = angular.module('mrTsybranCV');
   
 	var GeneralCtrl = function($scope, $rootScope){
-		// $scope.$on('$routeChangeStart', function(){
-		// 	$scope.hideView = true;
-		// 	// console.log(!$('md-progress-linear.loading_view').length);
-		// 	// if(!$('md-progress-linear.loading_view').length){
-		// 	// 	var viewEl = $('.page > div');
-		// 	// 	$('md-progress-linear').width(viewEl.width());
-		// 	// 	$('md-progress-linear').addClass('loading_view');
-		// 	// 	$scope.hideView = true;
-		// 	// } else {
-		// 	// 	$scope.hideView = true;
-		// 	// 	$('md-progress-linear').removeClass('invisible_loader');
-		// 	// }
-		// });
-		Skype.ui({
-	         'name': 'call',
-	         'element': 'skype_button',
-	         'participants': ['kerka121']
-	         });
 		
 		$scope.$on('$viewContentLoaded', function(){
+
 		    this.about = {
 		    	heading: 'General Info',
 		    	inputs: [
@@ -91,23 +74,21 @@
 				]
 			};
 
+			$scope.inputs = this[$rootScope.curMenu].inputs;
+			$scope.heading = this[$rootScope.curMenu].heading;
+
 			if($rootScope.curMenu == 'contacts'){
 				$scope.infClass = 'contacts_card';
 			} else {
 				$scope.infClass = '';
 			}
-
-			$scope.inputs = this[$rootScope.curMenu].inputs;
-			$scope.heading = this[$rootScope.curMenu].heading;
-
-			// $timeout(hideLoader, 1200);
-
-			// function hideLoader(){
-			// 	$scope.hideView = false;
-			// 	// $('md-progress-linear').addClass('invisible_loader');
-			// };
 	  	});
-		
+
+	  	Skype.ui({
+	        'name': 'call',
+	        'element': 'skype_button',
+	        'participants': ['kerka121']
+        });
 	};
 
 	app.controller('GeneralCtrl', GeneralCtrl);

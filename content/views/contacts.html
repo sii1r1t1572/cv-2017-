@@ -4,38 +4,40 @@
 <div class='email_form'>
 	<form id='send_form' name='mailForm'>
 		<md-input-container>
-            <label>Name</label>
-            <input ng-model='interviewer.name'>
-        </md-input-container>
+      <label>Name</label>
+      <input name='name' ng-model='interviewer.name'>
+    </md-input-container>
 		<md-input-container>
-	        <label>Company</label>
-	        	<input required name='company' ng-model="interviewer.company">
-	        	<div ng-messages="mailForm.company.$error">
-	        		<div ng-message="required">Let me know, where i would work.</div>
-	        	</div>
-        </md-input-container>
-        <div class='int_date'>
-        	<h3>Select suitable interview date</h3>
-      		<md-datepicker ng-model='interviewer.date'></md-datepicker>
+      <label>Company</label>
+    	<input required name='company' ng-model='interviewer.company'>
+    	<div ng-messages='mailForm.company.$error'>
+    		<div ng-message='required'>
+          Let me know, where i would work.
         </div>
+    	</div>
+    </md-input-container>
+      <div class='int_date'>
+      	<h3>Select suitable interview date</h3>
+    		<md-datepicker ng-model='interviewer.date'></md-datepicker>
+      </div>
 		<md-input-container>
-        	<label>Email</label>
-        	<input required type='email' name='email' ng-model='interviewer.email'
-                minlength='8' maxlength='50' ng-pattern='/^.+@.+\..+$/' />
-
-        	<div ng-messages='mailForm.email.$error' role='alert'>
-          		<div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
-            		Your email must be between 8 and 100 characters long and look like an e-mail address.
-          		</div>
-        	</div>
-      	</md-input-container>
-      	<md-input-container class='int_offer'>
-          <label>Offer</label>
-          <textarea required ng-model='interviewer.offer' md-maxlength='1000' rows='4' md-select-on-focus></textarea>
-        </md-input-container>
-         <md-button ng-hide='sendingForm' type='submit'>Submit</md-button>
-         <div ng-show='sendingForm' class='submit_preloader'>
-          <md-progress-circular class='submit_preloader' md-diameter='20px'></md-progress-circular>
-	       </div>
+    	<label>Email</label>
+    	<input required type='email' name='email' ng-model='interviewer.email'
+                  minlength='8' maxlength='50' ng-pattern='/^.+@.+\..+$/' />
+      <div ng-messages='mailForm.email.$error' role='alert'>
+    		<div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+      		Your email must be between 8 and 100 characters long and look like an e-mail address.
+    		</div>
+    	</div>
+  	</md-input-container>
+  	<md-input-container class='int_offer'>
+      <label>Description & Offer</label>
+      <textarea required ng-model='interviewer.offer' md-maxlength='1000' 
+                rows='4' md-select-on-focus></textarea>
+    </md-input-container>
+    <md-button ng-hide='sendingForm' type='submit'>Submit</md-button>
+    <div ng-show='sendingForm' class='submit_preloader'>
+      <md-progress-circular class='submit_preloader' md-diameter='20px'></md-progress-circular>
+    </div>
   </form>
 </div>

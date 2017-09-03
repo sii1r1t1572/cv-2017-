@@ -1,13 +1,3 @@
-h3{
-	margin: 0;
-	margin-top: 25px;
-	width: 100%;
-}
-h3:first-of-type .md-button,
-h3:first-of-type .md-button:hover{
-	background: rgba(0,0,0,.54);
-	color: rgba(255,255,255,.87);
-}
 .layout-column{
 	width: 100%;
 }
@@ -24,10 +14,4 @@ h3:first-of-type .md-button:hover{
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 
 				0 3px 6px rgba(0,0,0,0.23);
 	letter-spacing: 0em;
-}
-md-list-item{
-	padding: 15px;
-}
-.md-subhead{
-	color: rgba(0,0,0,.54);
 }

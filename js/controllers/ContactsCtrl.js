@@ -2,24 +2,24 @@
 
 	var app = angular.module('mrTsybranCV');
   
-	var ContactsCtrl = function($timeout, $scope){
-
-    	// $timeout($('#skype_button img').attr('src', '../images/bg_patt.png'),2000);
-    	// $scope.interviewer = {
-     //        Name: '',
-     //        Company: '',
-     //        Date: '',
-     //        Email: '',
-     //        Offer: ''
-     //    };
-        var tommorow = new Date();
+	var ContactsCtrl = function($scope){
+    	var tommorow = new Date();
         tommorow.setDate(tommorow.getDate() + 1);
+
         $scope.interviewer = {
-            date: tommorow
+            name: '', company: '', date: '', 
+            email: '', offer: ''
         };
         $scope.sendingForm = false;
+        $scope.interviewer.date = tommorow;
+        
+        $('form').on('submit', function(e){
+            e.preventDefault();
+            $scope.sendingForm = true;
+            formSubmit();
+        });
 
-        var formSubmit = function(){
+        function formSubmit(){
             var formData = {
                 Name: $scope.interviewer.name,
                 Company: $scope.interviewer.company,
@@ -42,13 +42,6 @@
                 }
             });
         };
-
-    	$('form').on('submit', function(e){
-    		e.preventDefault();
-            $scope.sendingForm = true;
-    		formSubmit();
-    	});
-    	
     };
 
 	app.controller('ContactsCtrl', ContactsCtrl);

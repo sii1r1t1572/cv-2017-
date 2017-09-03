@@ -1,20 +1,15 @@
+.language {
+	margin: 10px 0;
+	min-width: 270px;
+}
 .languages_content.md-title {
 	display: flex;
 	justify-content: space-around;
 	padding: 15px;
 	flex-wrap: wrap;
 }
-.language {
-	margin: 10px 0;
-	min-width: 270px;
-}
 .language .flex{
 	flex: inherit;
-}
-.language md-slider-container h5 {
-	min-width: 100px;
-	text-align: left !important;
-	line-height: 28px;
 }
 .language md-slider-container {
 	flex-flow: row nowrap;
@@ -23,4 +18,9 @@
 	min-width: 126px;
 	line-height: 1;
 	height: auto;
+}
+.language md-slider-container h5 {
+	min-width: 100px;
+	text-align: left !important;
+	line-height: 28px;
 }

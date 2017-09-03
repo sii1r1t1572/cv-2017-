@@ -5,8 +5,7 @@
 	var footer = function(){
 		return{
 			restrict: 'E',
-			templateUrl: 'content/footer.html',
-			controller: 'FooterCtrl'
+			templateUrl: 'content/footer.html'
 		};
 	}
 
